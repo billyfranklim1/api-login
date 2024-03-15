@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 
-class LoginRequest extends BaseRequest
+class RegisterRequest extends BaseRequest
 {
 
     /**
@@ -14,8 +14,10 @@ class LoginRequest extends BaseRequest
     public function rules(): array
     {
         return [
-            'username' => 'required|string|exists:users,username',
-            'password' => 'required'
+            'name' => 'required|string',
+            'username' => 'required|string|unique:users,username',
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|string|min:6|confirmed',
         ];
     }
 }
