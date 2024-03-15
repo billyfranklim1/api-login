@@ -51,7 +51,7 @@ class LoginTest extends TestCase
             'password' => 'wrongpassword',
         ]);
 
-        $response->assertStatus(401);
+        $response->assertStatus(422);
     }
 
     public function testUserLogout()
