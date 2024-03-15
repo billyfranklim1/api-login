@@ -25,6 +25,9 @@ php artisan optimize
 # Run database migrations
 php artisan migrate --force
 
+# Run database seeders
+php artisan db:seed --force
+
 # Exit maintenance mode
 php artisan up
 
