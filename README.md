@@ -10,6 +10,8 @@ A aplicação **Login** é uma API RESTful desenvolvida com Laravel 8 e MySQL. O
 
 **Importante:** Laravel Sail utiliza a porta `3306` para o MySQL por padrão. Certifique-se de que esta porta esteja disponível 🚦 ou ajuste a configuração conforme necessário.
 
+## Ci/CD 🚀
+Este projeto está configurado para rodar testes de integração e gerar documentação com o [GitHub Actions](https://github.com/billyfranklim1/api-login/actions). A cada push ou pull request, os testes são executados e a documentação é gerada automaticamente. A aplicação está disponível em [http://api-login.billy.dev.br/api/documentation](http://api-login.billy.dev.br/api/documentation).
 
 ## Como Clonar o Projeto 📋
 
