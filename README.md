@@ -1,7 +1,6 @@
-# Todo
+# Login
 
-A aplicação **Todo** é uma API RESTful desenvolvida com Laravel 8 e MySQL. O objetivo é fornecer um exemplo de aplicação Laravel com testes de integração. A aplicação permite criar, listar, atualizar e excluir tarefas. Ela também permite marcar uma tarefa como concluída. Podendo ser consumida por qualquer cliente que suporte requisições HTTP.
-
+A aplicação **Login** é uma API RESTful desenvolvida com Laravel 8 e MySQL. O objetivo é fornecer um exemplo de aplicação Laravel com testes de integração. A aplicação permite que o usuário faça login.
 ## Pré-requisitos ✅
 
 - Composer
@@ -17,13 +16,13 @@ A aplicação **Todo** é uma API RESTful desenvolvida com Laravel 8 e MySQL. O 
 Para clonar o projeto, abra um terminal e execute o seguinte comando:
 
 ```bash
-git clone https://github.com/billyfranklim1/api-todo.git
+git clone https://github.com/billyfranklim1/api-login.git
 ```
 
 🎉 Após clonar o repositório, entre no diretório do projeto:
 
 ```bash
-cd api-todo
+cd api-login
 ```
 
 ## Configuração Inicial 🔧
