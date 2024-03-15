@@ -16,8 +16,12 @@ use App\Http\Controllers\LoginController;
 */
 
 Route::post('/login', [LoginController::class, 'login']);
-//Route::post('/register', [LoginController::class, 'register']);
-//Route::post('/logout', [LoginController::class, 'logout']);
-//Route::post('/refresh', [LoginController::class, 'refresh']);
-//Route::post('/me', [LoginController::class, 'me']);
+Route::post('/register', [LoginController::class, 'register']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
+
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::post('/refresh', [LoginController::class, 'refresh']);
+    Route::get('/me', [LoginController::class, 'me']);
+});
 
