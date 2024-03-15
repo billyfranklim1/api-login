@@ -17,4 +17,24 @@ class LoginService
     {
         return $this->loginRepository->login($credentials);
     }
+
+    public function registerService(array $credentials)
+    {
+        return $this->loginRepository->register($credentials);
+    }
+
+    public function logoutService()
+    {
+        return $this->loginRepository->logout();
+    }
+
+    public function refreshService()
+    {
+        return $this->loginRepository->refresh();
+    }
+
+    public function meService()
+    {
+        return $this->loginRepository->me();
+    }
 }
