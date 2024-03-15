@@ -10,8 +10,8 @@ use OpenApi\Annotations as OA;
 /**
  * @OA\Info(
  *      version="1.0.0",
- *      title="TODO API",
- *      description="TODO API is a simple API to create, read, update and delete TODO items.",
+ *      title="Login API",
+ *      description="Documentação da API de login",
  *      @OA\Contact(
  *          email="billyfranklim@gmail.com"
  *      ),
@@ -33,7 +33,7 @@ use OpenApi\Annotations as OA;
  * @OA\OpenApi(
  *       x={
  *           "tagGroups"={
- *               {"name"="TODO", "tags"={"todo"}},
+ *               {"name"="LOGIN", "tags"={"login"}},
  *           }
  *       },
  *   )
